@@ -61,6 +61,7 @@ public abstract class DatabaseObjectFactory {
             case AFFILIATION:
                 rtn = new Affiliation();
                 break;
+            case ANATOMY:                                   rtn = new Anatomy();                            break;
             //case ABSTRACT_MODIFIED_RESIDUE:  //NOT USED HERE
             case BLACK_BOX_EVENT:                           rtn = new BlackBoxEvent();                      break;
             case BOOK:                                      rtn = new Book();                               break;
@@ -68,9 +69,13 @@ public abstract class DatabaseObjectFactory {
             case CATALYST_ACTIVITY:                         rtn = new CatalystActivity();                   break;
             case CATALYST_ACTIVITY_REFERENCE:               rtn = new CatalystActivityReference();          break;
             case CELL_TYPE:                                 rtn = new CellType();                           break;
+            case CELL:                                      rtn = new Cell();                               break;
+            case CELL_DEVELOPMENT_STEP:                     rtn = new CellDevelopmentStep();                break;
+            case CELL_LINEAGE_PATH:                         rtn = new CellLineagePath();                    break;
             case CHEMICAL_DRUG:                             rtn = new ChemicalDrug();                       break;
             case COMPARTMENT:                               rtn = new Compartment();                        break;
             case COMPLEX:                                   rtn = new Complex();                            break;
+            case CONTROLLED_VOCABULARY:                     rtn = new ControlledVocabulary();               break;
             //case CROSS_LINKED_RESIDUE: //NOT USED H
             case DATABASE_IDENTIFIER:                       rtn = new DatabaseIdentifier();                 break;
             //case DATABASE_OBJECT: //NOT USED HERE
@@ -100,6 +105,7 @@ public abstract class DatabaseObjectFactory {
             case INSTANCE_EDIT:                             rtn = new InstanceEdit();                       break;
             case INTER_CHAIN_CROSSLINKED_RESIDUE:           rtn = new InterChainCrosslinkedResidue();       break;
             case INTRA_CHAIN_CROSSLINKED_RESIDUE:           rtn = new IntraChainCrosslinkedResidue();       break;
+            case MARKER_REFERENCE:                          rtn = new MarkerReference();                    break;
             case LITERATURE_REFERENCE:                      rtn = new LiteratureReference();                break;
             case MODIFIED_RESIDUE:                          rtn = new ModifiedResidue();                    break;
             case MODIFIED_NUCLEOTIDE:                       rtn = new ModifiedNucleotide();                 break;
@@ -131,6 +137,7 @@ public abstract class DatabaseObjectFactory {
             case REGULATION:                                rtn = new Regulation();                         break;
             case REGULATION_REFERENCE:                      rtn = new RegulationReference();                break;
             case REPLACED_RESIDUE:                          rtn = new ReplacedResidue();                    break;
+            case REVIEW_STATUS:                             rtn = new ReviewStatus();                       break;
             case NONSENSE_MUTATION:                         rtn = new NonsenseMutation();                   break;
             case REQUIREMENT:                               rtn = new Requirement();                        break;
             case RNA_DRUG:                                  rtn = new RNADrug();                            break;

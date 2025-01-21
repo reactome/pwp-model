@@ -30,6 +30,7 @@ public abstract class PhysicalEntity extends DatabaseObject {
     private List<InstanceEdit> reviewed;
     private List<InstanceEdit> revised;
     private List<Summation> summation;
+    private List<CellType> cellType;
 
     private List<Event> consumedByEvent;
     private List<Event> producedByEvent;
@@ -40,6 +41,8 @@ public abstract class PhysicalEntity extends DatabaseObject {
     private List<PhysicalEntity> componentOf;
     private List<PhysicalEntity> memberOf;
     private List<Polymer> repeatedUnitOf;
+
+    private List<MarkerReference> markingReferences;
 
     public PhysicalEntity(SchemaClass schemaClass) {
         super(schemaClass);
@@ -80,6 +83,7 @@ public abstract class PhysicalEntity extends DatabaseObject {
 
         this.literatureReference = DatabaseObjectUtils.getObjectList(jsonObject, "literatureReference");
 
+        this.markingReferences = DatabaseObjectUtils.getObjectList(jsonObject, "markingReferences");
 
         this.reviewed = DatabaseObjectUtils.getObjectList(jsonObject, "reviewed");
 
@@ -87,6 +91,7 @@ public abstract class PhysicalEntity extends DatabaseObject {
 
         this.summation = DatabaseObjectUtils.getObjectList(jsonObject, "summation");
 
+        this.cellType = DatabaseObjectUtils.getObjectList(jsonObject, "cellType");
 
         this.producedByEvent = DatabaseObjectUtils.getObjectList(jsonObject, "producedByEvent");
 
@@ -190,6 +195,8 @@ public abstract class PhysicalEntity extends DatabaseObject {
     public List<Summation> getSummation() {
         return summation;
     }
+
+    public List<CellType> getCellType() { return cellType; }
 
     public abstract List<Species> getSpecies();
 
