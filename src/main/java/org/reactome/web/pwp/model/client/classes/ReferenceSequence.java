@@ -7,7 +7,7 @@ import org.reactome.web.pwp.model.client.factory.SchemaClass;
 import java.util.List;
 
 /**
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 @SuppressWarnings("UnusedDeclaration")
 public abstract class ReferenceSequence extends ReferenceEntity {

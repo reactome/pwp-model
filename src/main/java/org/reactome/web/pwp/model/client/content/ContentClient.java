@@ -15,7 +15,7 @@ import org.reactome.web.pwp.model.client.util.StringUtils;
 import java.util.*;
 
 /**
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 @SuppressWarnings("UnusedReturnValue")
 public abstract class ContentClient extends ContentClientAbstract {

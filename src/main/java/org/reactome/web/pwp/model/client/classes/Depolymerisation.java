@@ -6,7 +6,7 @@ import org.reactome.web.pwp.model.client.factory.DatabaseObjectImages;
 import org.reactome.web.pwp.model.client.factory.SchemaClass;
 
 /**
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 public class Depolymerisation extends ReactionLikeEvent {
 

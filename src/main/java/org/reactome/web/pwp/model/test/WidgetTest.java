@@ -16,7 +16,7 @@ import java.util.List;
 
 
 /**
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 public class WidgetTest implements EntryPoint {
 

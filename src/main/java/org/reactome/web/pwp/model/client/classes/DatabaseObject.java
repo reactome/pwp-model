@@ -13,7 +13,7 @@ import org.reactome.web.pwp.model.client.factory.SchemaClass;
 /**
  * DatabaseObject contains the minimum fields used to define an instance in the REACTOME RESTFul service
  *
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 @SuppressWarnings("UnusedDeclaration")
 public abstract class DatabaseObject {
