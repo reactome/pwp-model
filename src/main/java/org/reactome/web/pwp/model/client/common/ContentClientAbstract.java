@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * These are the common methods for the ContentClient implementation
  *
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 @SuppressWarnings("WeakerAccess")
 public abstract class ContentClientAbstract {

@@ -1,7 +1,7 @@
 package org.reactome.web.pwp.model.client.content;
 
 /**
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 public class ContentClientException extends Exception {
 

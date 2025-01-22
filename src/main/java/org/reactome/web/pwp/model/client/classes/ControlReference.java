@@ -7,8 +7,8 @@ import org.reactome.web.pwp.model.client.factory.SchemaClass;
 import java.util.List;
 
 /**
- * @author Guilherme Viteri <gviteri@ebi.ac.uk>
- * @author Kostas Sidiropoulos <ksidiro@ebi.ac.uk>
+ * @author Guilherme Viteri (gviteri@ebi.ac.uk)
+ * @author Kostas Sidiropoulos (ksidiro@ebi.ac.uk)
  */
 @SuppressWarnings("UnusedDeclaration")
 public class ControlReference extends DatabaseObject {

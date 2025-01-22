@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 
 /**
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 public abstract class DatabaseObjectFactory {
 

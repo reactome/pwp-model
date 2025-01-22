@@ -1,9 +1,9 @@
 package org.reactome.web.pwp.model.client.factory;
 
 /**
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
- * @author Kostas Sidiropoulos <ksidiro@ebi.ac.uk>
- * @author Guilherme Viteri <gviteri@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
+ * @author Kostas Sidiropoulos (ksidiro@ebi.ac.uk)
+ * @author Guilherme Viteri (gviteri@ebi.ac.uk)
  */
 public enum SchemaClass {
     AFFILIATION("Affiliation"),

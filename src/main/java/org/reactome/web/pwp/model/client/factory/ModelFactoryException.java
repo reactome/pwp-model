@@ -1,7 +1,7 @@
 package org.reactome.web.pwp.model.client.factory;
 
 /**
- * @author Antonio Fabregat <fabregat@ebi.ac.uk>
+ * @author Antonio Fabregat (fabregat@ebi.ac.uk)
  */
 @SuppressWarnings("UnusedDeclaration")
 public class ModelFactoryException extends RuntimeException{
