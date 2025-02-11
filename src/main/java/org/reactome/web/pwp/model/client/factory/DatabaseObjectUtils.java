@@ -6,6 +6,7 @@ import com.google.gwt.json.client.JSONString;
 import com.google.gwt.json.client.JSONValue;
 import org.reactome.web.pwp.model.client.classes.DatabaseObject;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -71,7 +72,7 @@ public class DatabaseObjectUtils {
 
     @SuppressWarnings("unchecked")
     public static <T extends DatabaseObject> List<T> getObjectList(JSONObject jsonObject, String key) {
-        List<T> list = new LinkedList<>();
+        List<T> list = new ArrayList<>();
         JSONValue aux = jsonObject.get(key);
         if (aux != null) {
             JSONArray listAux = aux.isArray();
