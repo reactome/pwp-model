@@ -6,17 +6,19 @@ import com.google.gwt.json.client.JSONParser;
 import org.reactome.web.pwp.model.client.classes.*;
 import org.reactome.web.pwp.model.client.common.ContentClientAbstract;
 import org.reactome.web.pwp.model.client.common.ContentClientHandler;
-import org.reactome.web.pwp.model.client.util.LruCache;
+
 
 import java.util.Collection;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 /**
  * @author Antonio Fabregat <fabregat@ebi.ac.uk>
  */
 public abstract class DatabaseObjectFactory {
 
-    public static final LruCache<String, DatabaseObject> cache = new LruCache<>(200);
+    public static final Map<String, DatabaseObject> cache = new LinkedHashMap<>();
 
     public static final Collection<Scheduler.ScheduledCommand> cmds = new LinkedList<>();
 
@@ -33,6 +35,7 @@ public abstract class DatabaseObjectFactory {
             databaseObject.isLoaded = true;
 
             handler.onObjectLoaded(databaseObject);
+            cache.clear();
         });
     }
 
